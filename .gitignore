@@ -1,0 +1,32 @@
+# Java build output
+build/
+*.class
+
+# Eclipse workspace metadata
+.metadata/
+
+# Local editor settings
+.vscode/
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+local.properties
+
+# H2 database files
+*.mv.db
+*.trace.db
+*.lock.db
+*.h2.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*~
+*.swp
+
+# Windows-generated files
+Thumbs.db
+Desktop.ini
