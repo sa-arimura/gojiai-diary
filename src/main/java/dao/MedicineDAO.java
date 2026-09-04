@@ -13,7 +13,7 @@ public class MedicineDAO {
 
 	private final String JDBC_URL = System.getenv("GOJIAI_DB_URL");
 	private final String DB_USER = System.getenv("GOJIAI_DB_USER");
-	private final String DB_PASS = System.getenv("GOJIAI_DB_PASSWORD");
+	private final String DB_PASS = System.getenv().getOrDefault("GOJIAI_DB_PASSWORD", "");
 
 	public List<Medicine> findAll() {
 		List<Medicine> medicineList = new ArrayList<>();
